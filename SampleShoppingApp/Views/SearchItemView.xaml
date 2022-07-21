@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleShoppingApp.Views.SearchItemView"
+             >
+    <VerticalStackLayout Margin="20">
+        <Entry Placeholder="Search Here" Text="{Binding Code}"/>
+        <Button Text="Seacrh" Margin="0,10,0,0" Command="{Binding GetItemInfoCommand}" />
+
+        <VerticalStackLayout Margin="0,50,0,0">
+            <Image HeightRequest="400" WidthRequest="400" Source="{Binding Image}"/>
+            <Label Text="{Binding Name}" Margin="0,10,0,0" HorizontalOptions="Center" FontSize="15" FontAttributes="Bold" />
+            <Label Text="{Binding Price}" Margin="0,2,0,0" HorizontalOptions="Center" />
+            <Label Text="{Binding Description}" Margin="0,2,0,0" HorizontalOptions="Center" />
+
+
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

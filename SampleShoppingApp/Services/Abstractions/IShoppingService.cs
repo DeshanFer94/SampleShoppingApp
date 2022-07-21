@@ -1,0 +1,14 @@
+﻿using SampleShoppingApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SampleShoppingApp.Services.Abstractions
+{
+    public interface IShoppingService
+    {
+       Task<ShoppingItemModel> GetItemInfoFromRestService(int code);
+    }
+}
